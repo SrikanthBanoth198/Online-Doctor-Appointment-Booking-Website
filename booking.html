@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Appointment Scheduling</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<style>
+body, h1, h2, form {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+header {
+    background-color: #3498db;
+    color:Black;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.appointment-form {
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    display: block;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Style the form on focus/hover */
+input:focus, button:hover {
+    border-color: #3498db;
+}
+.confirm_button{
+    margin-left: 100px;
+}
+</style>
+<header>
+        <h1>Medical Appointment Scheduling</h1>
+    </header>
+    <main>
+        <section class="appointment-form">
+            <h2>Book an Appointment</h2>
+            <form action="submit.php" method="post">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="age">Enter Age</label>
+                <input type="text" id="age" name="Enter age" required>
+
+                <label for="Blood_group">Blood Group</label>
+                <input type="text" id="Blood Group" name="Blood Group>" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="date">Appointment Date</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="time">Appointment Time</label>
+                <input type="time" id="time" name="time" required>
+                <div class="confirm_button">
+                    <a href="file:///C:/Users/91949/Desktop/Untitled-1.html"><button>Confirm</button></a>
+                </div>              
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Medical Appointment Scheduling</p>
+    </footer>
+</body>
+</html>
